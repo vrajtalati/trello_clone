@@ -1,31 +1,35 @@
 import React from 'react'
 import Card from '../Card'
 import CardWithoutImage from '../CardWithoutImage'
+import Image1 from '../images/Photo1.png'
+import Image2 from '../images/Photo2.png'
 import Image from '../images/Photo4.png'
-import dots from '../images/dots.svg'
+import AddNewCard from '../AddNewCard'
+
 const CardBox = () => {
   return (
     <div >
-    <div className="flex flex-col space-y-2 ">
+    <div className=" flex flex-col space-y-2 flex-shrink-0">
     <div className=" bg-gray-200 w-362 h-50 flex-shrink-0 flex items-center justify-between p-4 rounded-10 bg-F4F4F4">
-  <div className="flex items-center justify-between w-full">
-    <div>Trello</div>
-    <div className="w-60 h-10 mt-auto">
-      <img src={dots} alt="Dots" />
+      <div className="text-left">Test</div>
+      <div className="w-60 h-10"></div>
     </div>
-  </div>
-</div>
-
        <CardWithoutImage/>
-       
        <Card Image={Image}/>
        <CardWithoutImage/>
        <CardWithoutImage/>
+       <AddNewCard/>
+       
       
-      {/* Add more CardBox components as needed */}
+      
     </div>
   </div>
   )
 }
 
 export default CardBox
+
+
+
+
+

@@ -14,7 +14,7 @@ function App() {
     <div className="">
           <Header/>
   <div className="flex-nowrap overflow-x-scroll ">
-  <div className=" flex flex-row space-x-2">
+  <div className=" ml-4 flex flex-row space-x-2">
     <CardBox />
     <CardBox1 />
     <CardBox2 />
@@ -22,7 +22,7 @@ function App() {
     <CardBox4 />
    
     
-    {/* Add more CardBox components as needed */}
+   
   </div>
 </div>
          

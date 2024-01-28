@@ -18,8 +18,15 @@ const Card = (props) => {
 
   return (
     <div className="max-w-md mx-auto bg-gray-200 shadow-md rounded-md overflow-hidden relative">
+      
       {/* Image */}
       <img src={props.Image} className="w-full h-40 object-cover" alt="Card Image" />
+     
+<div className="flex space-x-4 m-2">
+  
+  <div className="w-10 h-2 flex-shrink-0 bg-green-500 rounded-md"></div>
+  <div className="w-10 h-2 flex-shrink-0 bg-purple-500 rounded-md"></div>
+</div>
 
       {/* Text Content */}
       <div className="p-4 text-black font-Poppins text-base  font-normal leading-normal">

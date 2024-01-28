@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../Card'
 import CardWithoutImage from '../CardWithoutImage'
 import Image from '../images/Photo.png'
+import AddNewCard from '../AddNewCard'
 const CardBox = () => {
   return (
     <div >
@@ -13,6 +14,7 @@ const CardBox = () => {
        <CardWithoutImage/>
        <CardWithoutImage/>
        <Card Image={Image}/>
+       <AddNewCard/>
       
       {/* Add more CardBox components as needed */}
     </div>

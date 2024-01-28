@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import search from '../componenets/images/serachIcon.svg'
 
 
 const SearchBar = ({ onSearch }) => {
@@ -9,21 +10,19 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className=" p-30 m-3  h-30 flex-shrink-0 rounded-full bg-gray-300">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        className="w-full h-full rounded-full border-none  bg-gray-300 outline-none pl-4"
-      ></input>
-      {/* <button
-        onClick={handleSearch}
-        className="w-12 h-full flex items-center justify-center bg-gray-300 rounded-full"
-      >
-        <FontAwesomeIcon icon={faSearch} />
-      </button> */}
+    <div className="p-3 m-3 w-80 h-3 flex-shrink-0 rounded-full bg-gray-300 relative">
+    <input
+      type="text"
+      placeholder=" "
+      value={query}
+      onChange={(e) => setQuery(e.target.value)}
+      className="w-full h-full rounded-full border-none bg-gray-300 outline-none pl-4"
+    />
+    <div className="absolute top-1/2 transform -translate-y-1/2 right-2">
+      <img src={search} alt="Image" className="w-6 h-6" />
     </div>
+  </div>
+  
   );
 };
 

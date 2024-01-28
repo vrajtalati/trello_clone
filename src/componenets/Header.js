@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <>
       <div className={`flex items-center justify-between ${isSmallScreen ? 'm-4' : 'm-3 '}`}>
-        {/* Logo Section (Conditional rendering based on screen size) */}
+        
         {!isSmallScreen && (
           <div className="w-20 border-r-2 pr-2">
             <img
@@ -52,13 +52,12 @@ const Header = () => {
           </div>
         )}
 
-        {/* Boards Section (Conditional rendering based on screen size) */}
         <div className="w-10% flex items-center border-r-2 pr-2">
           <img src={Trello} alt="Logo" className="mr-2" />
           {!isSmallScreen && <div>Boards</div>}
         </div>
 
-        {/* SearchBar Section (Conditional rendering based on screen size) */}
+        
         {isSmallScreen ? (
           <div className="ml-4">
             <img
@@ -71,8 +70,6 @@ const Header = () => {
           <SearchBar onSearch="" />
         )}
 
-        {/* Logos Section (Conditional rendering based on screen size) */}
-        {/* {!isSmallScreen && ( */}
           <div className="flex items-center space-x-4 ml-auto">
             <div>
               <img
@@ -93,7 +90,7 @@ const Header = () => {
         {/* )} */}
       </div>
 
-      {/* Bracket and Icons Section */}
+     
       <div className={` ml-auto flex ml-4 ${isSmallScreen ? ' flex-col items-start':'flex row  items-center '}`}>
         <div
           style={{
@@ -109,7 +106,6 @@ const Header = () => {
           Bracket
         </div>
 
-        {/* Vertical Lines and Logos Section */}
         <div className={`flex flex-1  justify-between`}>
         <div className={`flex items-center  ${isSmallScreen ? ' m-0 pl-3':'ml-8 pl-10'}`}>
           <div>
