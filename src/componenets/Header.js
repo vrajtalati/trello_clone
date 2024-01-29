@@ -91,7 +91,7 @@ const Header = () => {
       </div>
 
      
-      <div className={` ml-auto flex ml-4 ${isSmallScreen ? ' flex-col items-start':'flex row  items-center pl-4 '}`}>
+      <div className={` ml-auto flex ml-4 ${isSmallScreen ? 'pl-4 flex-col items-start':'flex row  items-center pl-4 '}`}>
         <div
           style={{
             color: '#000',
@@ -149,6 +149,7 @@ const Header = () => {
       <img src={avatar} alt={`User Avatar ${index + 1}`} className="w-8 h-8 object-cover" />
     </div>
   ))}
+  <button className='pl-8 pr-1'> Menu</button>
  
      </div>
      </div>
