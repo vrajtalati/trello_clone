@@ -91,7 +91,7 @@ const Header = () => {
       </div>
 
      
-      <div className={` ml-auto flex ml-4 ${isSmallScreen ? ' flex-col items-start':'flex row  items-center '}`}>
+      <div className={` ml-auto flex ml-4 ${isSmallScreen ? ' flex-col items-start':'flex row  items-center pl-4 '}`}>
         <div
           style={{
             color: '#000',
